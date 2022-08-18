@@ -20,12 +20,18 @@ const Table = ({ columns, rows }) => {
     );
   };
 
+  const renderCell = (row, column) => {
+    const { key } = column;
+    return (
+      <td>{row[key]}</td>
+    );
+  };
+
   const renderRow = (row) => {
-    const { id, name, location } = row;
+    const { id } = row;
     return (
       <tr key={id}>
-        <td>{name}</td>
-        <td>{location}</td>
+        {columns.map(column => renderCell(row, column))}
       </tr>
     );
   };
