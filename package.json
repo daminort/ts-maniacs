@@ -1,0 +1,14 @@
+{
+  "name": "ts-maniacs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/daminort/ts-maniacs.git",
+  "author": "Egorov Vlad <egorov.vlad.work.dev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17"
+  }
+}
